@@ -39,10 +39,7 @@ class ProductAttribute: NSManagedObject {
             newSetOfAttributes.insert(newAttribute)
         }
         
-        return newSetOfAttributes
-        
-        return Set<ProductAttribute>()
-        
+        return newSetOfAttributes   
     }
     
     class func updateProductAttribute(withAttribute currentAttribute: ProductAttribute, fromModel newAttribute: ProductAttributeModel, withContext context: NSManagedObjectContext) -> ProductAttribute {
